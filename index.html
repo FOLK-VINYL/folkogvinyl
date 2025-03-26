@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folk & Vinyl</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f1ec;
+      color: #2c2c2c;
+    }
+    header {
+      background-color: #e5ded4;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-style: italic;
+      color: #555;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background-color: #ded6cd;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2c2c2c;
+      font-weight: bold;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .quote {
+      font-size: 1.5rem;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 3rem;
+      color: #4a4a4a;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .grid-item {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #e5ded4;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Folk & Vinyl</h1>
+    <p>Lytt · Les · Lag · Lev</p>
+  </header>
+
+  <nav>
+    <a href="#om">Om</a>
+    <a href="#hva">Hva skjer</a>
+    <a href="#butikk">Butikk</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section>
+    <p class="quote">En plass for ro, lyd, inspirasjon og skaperkraft.</p>
+
+    <div class="grid">
+      <div class="grid-item" id="hva">
+        <h3>Hva skjer?</h3>
+        <ul>
+          <li>Mini-konserter og DJ-sett</li>
+          <li>Verksted: keramikk, collager, zines</li>
+          <li>Bokslipp og samtaler</li>
+          <li>Kreative pauser for voksne og barn</li>
+        </ul>
+      </div>
+
+      <div class="grid-item" id="butikk">
+        <h3>Hva kan du kjøpe?</h3>
+        <ul>
+          <li>Vinylplater og kassetter</li>
+          <li>Kaffe og enkel servering</li>
+          <li>Japansk keramikk og tekanner</li>
+          <li>Kuraterte interiørskatter</li>
+          <li>Tote bags, gensere, caps</li>
+          <li>Smykker og tekstiler</li>
+          <li>Utvalgte kunstverk</li>
+        </ul>
+      </div>
+
+      <div class="grid-item">
+        <h3>Stemningen</h3>
+        <p>Retro med en dose japansk minimalisme. Treverk, planter, lune farger og gjennomtenkt ro. Et sted du kan henge litt, lage litt, høre litt – eller bare være.</p>
+      </div>
+
+      <div class="grid-item" id="om">
+        <h3>Om Folk & Vinyl</h3>
+        <p>Initiert av Heidi Jessen, koreograf og kulturskaper. Folk & Vinyl er et personlig prosjekt for å skape et varmt, stille, kreativt rom – midt i hverdagen. Ikke en kafé. Ikke en butikk. Ikke en scene. Men noe midt imellom.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="kontakt">
+    Kontakt: folkogvinyl@epost.no · Instagram: @folkogvinyl
+  </footer>
+</body>
+</html>
