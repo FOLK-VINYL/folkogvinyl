@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="no">
 <head>
@@ -6,78 +5,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Folk & Vinyl</title>
   <style>
+    :root {
+      --farge-bakgrunn: #f3eee6;
+      --farge-header: #e0d5c3;
+      --farge-tre: #b98b5a;
+      --farge-dypbrun: #3b302a;
+      --farge-aksent: #d95b43;
+      --farge-lysbeige: #f9f6f1;
+    }
+
     body {
-      font-family: 'Helvetica Neue', sans-serif;
+      font-family: 'Georgia', serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f1ec;
-      color: #2c2c2c;
+      background-color: var(--farge-bakgrunn);
+      color: var(--farge-dypbrun);
+      line-height: 1.6;
     }
+
     header {
-      background-color: #e5ded4;
-      padding: 2rem;
+      background-color: var(--farge-header);
+      padding: 5rem 2rem 3rem 2rem;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2.8rem;
+      font-size: 3.8rem;
+      font-weight: bold;
       letter-spacing: 1px;
     }
+
     header p {
-      margin-top: 0.5rem;
+      margin-top: 0.8rem;
       font-style: italic;
-      color: #555;
+      font-size: 1.2rem;
+      color: var(--farge-tre);
     }
+
     nav {
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-      background-color: #ded6cd;
+      gap: 2.5rem;
+      padding: 1.2rem;
+      background-color: var(--farge-lysbeige);
     }
+
     nav a {
       text-decoration: none;
-      color: #2c2c2c;
+      color: var(--farge-dypbrun);
       font-weight: bold;
     }
+
+    nav a:hover {
+      color: var(--farge-aksent);
+    }
+
     section {
       padding: 4rem 2rem;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 0 auto;
     }
+
     .quote {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-style: italic;
       text-align: center;
       margin-bottom: 3rem;
-      color: #4a4a4a;
+      color: var(--farge-tre);
     }
+
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
     }
+
     .grid-item {
-      background-color: #fff;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      background-color: var(--farge-lysbeige);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
     }
+
+    .grid-item h3 {
+      color: var(--farge-aksent);
+      font-size: 1.4rem;
+    }
+
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 1rem;
       margin-top: 1.5rem;
     }
+
     .gallery img {
       width: 100%;
-      border-radius: 8px;
+      border-radius: 10px;
+      object-fit: cover;
     }
+
     footer {
       text-align: center;
       padding: 2rem;
-      background-color: #e5ded4;
-      color: #555;
+      background-color: var(--farge-tre);
+      color: var(--farge-lysbeige);
       font-size: 0.9rem;
     }
   </style>
@@ -102,34 +135,41 @@
       <div class="grid-item" id="hva">
         <h3>Hva skjer?</h3>
         <ul>
-          <li>Mini-konserter og DJ-sett</li>
-          <li>Verksted: keramikk, collager, zines</li>
-          <li>Bokslipp og samtaler</li>
-          <li>Kreative pauser for voksne og barn</li>
+          <li>Mini-konserter og DJ-sett med vinylvibber</li>
+          <li>Keramikkverksted, collager og skapende stunder</li>
+          <li>Bokslipp, samtaler og myke lanseringskvelder</li>
+          <li>Skapepauser for voksne og barn med leken estetikk</li>
         </ul>
       </div>
 
       <div class="grid-item" id="butikk">
         <h3>Hva kan du kjøpe?</h3>
         <ul>
-          <li>Vinylplater og kassetter</li>
-          <li>Kaffe og enkel servering</li>
-          <li>Japansk keramikk og tekanner</li>
-          <li>Kuraterte interiørskatter</li>
-          <li>Tote bags, gensere, caps</li>
-          <li>Smykker og tekstiler</li>
-          <li>Utvalgte kunstverk</li>
+          <li>Vinylplater og nostalgiske kassetter</li>
+          <li>Japansk-inspirert keramikk og tekanner</li>
+          <li>Kaffe og små godbiter</li>
+          <li>Kuraterte interiørskatter – retro møter ro</li>
+          <li>Smykker, tekstiler og håndplukkede klær</li>
+          <li>Kunst og kuriosa</li>
         </ul>
+        <div class="gallery">
+          <img src="/mnt/data/Skjermbilde 2025-03-26 kl. 10.57.20.png" alt="Bøker og keramikk">
+          <img src="/mnt/data/Skjermbilde 2025-03-26 kl. 10.57.34.png" alt="Papirlampe og bokhylle">
+          <img src="/mnt/data/Skjermbilde 2025-03-26 kl. 10.57.45.png" alt="Interiør med treverk og sofa">
+          <img src="/mnt/data/Skjermbilde 2025-03-26 kl. 10.57.58.png" alt="Spisebord og stoler">
+          <img src="/mnt/data/Skjermbilde 2025-03-25 kl. 11.59.09.png" alt="Tekanne og kopper">
+          <img src="/mnt/data/Skjermbilde 2025-03-25 kl. 12.00.11.png" alt="Kunstverk 1">
+        </div>
       </div>
 
       <div class="grid-item">
         <h3>Stemningen</h3>
-        <p>Retro med en dose japansk minimalisme. Treverk, planter, lune farger og gjennomtenkt ro. Et sted du kan henge litt, lage litt, høre litt – eller bare være.</p>
+        <p>Japansk te-hus møter 70-talls stue. Treverk, planter, keramikk og musikk. Et sted å lande, puste, skape og henge. En retro ro med varme farger og myke hjørner.</p>
       </div>
 
       <div class="grid-item" id="om">
         <h3>Om Folk & Vinyl</h3>
-        <p>Initiert av Heidi Jessen, koreograf og kulturskaper. Folk & Vinyl er et personlig prosjekt for å skape et varmt, stille, kreativt rom – midt i hverdagen. Ikke en kafé. Ikke en butikk. Ikke en scene. Men noe midt imellom.</p>
+        <p>Skapt av Heidi Jessen – koreograf, idémaker og menneskemøter. Dette er ikke en kafé. Ikke en butikk. Ikke et galleri. Det er et rom. En følelse. En pause. Et pust. Et sted hvor lyd og form flyter sammen, og folk får være folk.</p>
       </div>
     </div>
   </section>
